@@ -6,7 +6,7 @@ import time
 st.set_page_config(page_title="Real-Time Fraud Detection", layout="wide")
 st.title("🔍 Real-Time Fraud Detection Dashboard")
 
-API_URL = "http://127.0.0.1:8000/predict"
+API_URL = "https://real-time-ai-fraud-detection.onrender.com/predict"
 
 # Load data to simulate the stream
 df = pd.read_csv('data/creditcard.csv')

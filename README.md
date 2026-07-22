@@ -2,6 +2,11 @@
 
 A real-time fraud detection system built with a machine learning model (XGBoost) served via a live API, with a streaming simulation and visual dashboard.
 
+## 🔗 Live Demo
+**[Try it live here](https://real-time-ai-fraud-detection-mhpt8bjtnaur8gypgt8fsk.streamlit.app/)** — click "Start Live Stream" to watch transactions being scored in real-time.
+
+*Note: The backend API runs on a free-tier server and may take 30-50 seconds to "wake up" if it's been idle.*
+
 ## Overview
 
 This project detects fraudulent credit card transactions in real-time by combining a trained ML model with a lightweight streaming architecture — transactions are scored the moment they arrive, not in batch.

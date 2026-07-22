@@ -9,11 +9,9 @@ st.title("🔍 Real-Time Fraud Detection Dashboard")
 API_URL = "https://real-time-ai-fraud-detection.onrender.com/predict"
 
 # Load data to simulate the stream
-df = pd.read_csv('data/creditcard.csv')
+df = pd.read_csv('data/demo_sample.csv')
 # Mix normal transactions with guaranteed fraud cases for a better demo
-normal_sample = df[df['Class'] == 0].sample(180, random_state=42)
-fraud_sample = df[df['Class'] == 1].sample(20, random_state=42)
-stream_data = pd.concat([normal_sample, fraud_sample]).sample(frac=1, random_state=1)  # shuffle them together
+stream_data = df
 
 # Placeholders that we'll keep updating
 col1, col2, col3 = st.columns(3)
